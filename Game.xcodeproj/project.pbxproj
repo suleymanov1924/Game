@@ -12,6 +12,16 @@
 		490015701EB9B69400F6E5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4900156E1EB9B69400F6E5BC /* Main.storyboard */; };
 		490015721EB9B69400F6E5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490015711EB9B69400F6E5BC /* Assets.xcassets */; };
 		490015751EB9B69400F6E5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490015731EB9B69400F6E5BC /* LaunchScreen.storyboard */; };
+		4900157D1EB9B8B100F6E5BC /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900157C1EB9B8B100F6E5BC /* ViewController2.swift */; };
+		490015851EB9BFDC00F6E5BC /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900157E1EB9BFDC00F6E5BC /* map.png */; };
+		490015861EB9BFDD00F6E5BC /* kub6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4900157F1EB9BFDC00F6E5BC /* kub6.png */; };
+		490015871EB9BFDD00F6E5BC /* kub5.png in Resources */ = {isa = PBXBuildFile; fileRef = 490015801EB9BFDC00F6E5BC /* kub5.png */; };
+		490015881EB9BFDD00F6E5BC /* kub4.png in Resources */ = {isa = PBXBuildFile; fileRef = 490015811EB9BFDC00F6E5BC /* kub4.png */; };
+		490015891EB9BFDD00F6E5BC /* kub2.png in Resources */ = {isa = PBXBuildFile; fileRef = 490015821EB9BFDC00F6E5BC /* kub2.png */; };
+		4900158A1EB9BFDD00F6E5BC /* kub3.png in Resources */ = {isa = PBXBuildFile; fileRef = 490015831EB9BFDC00F6E5BC /* kub3.png */; };
+		4900158B1EB9BFDD00F6E5BC /* kub1.png in Resources */ = {isa = PBXBuildFile; fileRef = 490015841EB9BFDC00F6E5BC /* kub1.png */; };
+		4900158D1EB9C35F00F6E5BC /* WU5cvgwpfDg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4900158C1EB9C35F00F6E5BC /* WU5cvgwpfDg.jpg */; };
+		4900158F1EB9C36A00F6E5BC /* uuUOZr1hrds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4900158E1EB9C36A00F6E5BC /* uuUOZr1hrds.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		490015711EB9B69400F6E5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		490015741EB9B69400F6E5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490015761EB9B69400F6E5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4900157C1EB9B8B100F6E5BC /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		4900157E1EB9BFDC00F6E5BC /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../../Downloads/map.png; sourceTree = "<group>"; };
+		4900157F1EB9BFDC00F6E5BC /* kub6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub6.png; path = ../../../../Downloads/kub6.png; sourceTree = "<group>"; };
+		490015801EB9BFDC00F6E5BC /* kub5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub5.png; path = ../../../../Downloads/kub5.png; sourceTree = "<group>"; };
+		490015811EB9BFDC00F6E5BC /* kub4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub4.png; path = ../../../../Downloads/kub4.png; sourceTree = "<group>"; };
+		490015821EB9BFDC00F6E5BC /* kub2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub2.png; path = ../../../../Downloads/kub2.png; sourceTree = "<group>"; };
+		490015831EB9BFDC00F6E5BC /* kub3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub3.png; path = ../../../../Downloads/kub3.png; sourceTree = "<group>"; };
+		490015841EB9BFDC00F6E5BC /* kub1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kub1.png; path = ../../../../Downloads/kub1.png; sourceTree = "<group>"; };
+		4900158C1EB9C35F00F6E5BC /* WU5cvgwpfDg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = WU5cvgwpfDg.jpg; path = ../../../../Downloads/WU5cvgwpfDg.jpg; sourceTree = "<group>"; };
+		4900158E1EB9C36A00F6E5BC /* uuUOZr1hrds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = uuUOZr1hrds.jpg; path = ../../../../Downloads/uuUOZr1hrds.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +76,20 @@
 			children = (
 				4900156A1EB9B69400F6E5BC /* AppDelegate.swift */,
 				4900156C1EB9B69400F6E5BC /* ViewController.swift */,
+				4900157C1EB9B8B100F6E5BC /* ViewController2.swift */,
 				4900156E1EB9B69400F6E5BC /* Main.storyboard */,
 				490015711EB9B69400F6E5BC /* Assets.xcassets */,
 				490015731EB9B69400F6E5BC /* LaunchScreen.storyboard */,
 				490015761EB9B69400F6E5BC /* Info.plist */,
+				490015841EB9BFDC00F6E5BC /* kub1.png */,
+				490015821EB9BFDC00F6E5BC /* kub2.png */,
+				490015831EB9BFDC00F6E5BC /* kub3.png */,
+				490015811EB9BFDC00F6E5BC /* kub4.png */,
+				490015801EB9BFDC00F6E5BC /* kub5.png */,
+				4900157F1EB9BFDC00F6E5BC /* kub6.png */,
+				4900157E1EB9BFDC00F6E5BC /* map.png */,
+				4900158C1EB9C35F00F6E5BC /* WU5cvgwpfDg.jpg */,
+				4900158E1EB9C36A00F6E5BC /* uuUOZr1hrds.jpg */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -123,9 +153,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4900158D1EB9C35F00F6E5BC /* WU5cvgwpfDg.jpg in Resources */,
+				490015851EB9BFDC00F6E5BC /* map.png in Resources */,
+				4900158F1EB9C36A00F6E5BC /* uuUOZr1hrds.jpg in Resources */,
+				490015881EB9BFDD00F6E5BC /* kub4.png in Resources */,
+				490015891EB9BFDD00F6E5BC /* kub2.png in Resources */,
+				4900158A1EB9BFDD00F6E5BC /* kub3.png in Resources */,
 				490015751EB9B69400F6E5BC /* LaunchScreen.storyboard in Resources */,
 				490015721EB9B69400F6E5BC /* Assets.xcassets in Resources */,
+				490015871EB9BFDD00F6E5BC /* kub5.png in Resources */,
 				490015701EB9B69400F6E5BC /* Main.storyboard in Resources */,
+				490015861EB9BFDD00F6E5BC /* kub6.png in Resources */,
+				4900158B1EB9BFDD00F6E5BC /* kub1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +177,7 @@
 			files = (
 				4900156D1EB9B69400F6E5BC /* ViewController.swift in Sources */,
 				4900156B1EB9B69400F6E5BC /* AppDelegate.swift in Sources */,
+				4900157D1EB9B8B100F6E5BC /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +337,7 @@
 				4900157B1EB9B69400F6E5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
