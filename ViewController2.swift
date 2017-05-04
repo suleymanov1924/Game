@@ -7,16 +7,25 @@
 //
 
 import UIKit
+var kubik=0
+var kubik2=0
 
 class ViewController2: UIViewController {
     let pers1i: UIImage = UIImage(named: "WU5cvgwpfDg.jpg" )!
     let pers1v: UIImageView = UIImageView ()
     let pers2i: UIImage = UIImage(named: "uuUOZr1hrds.jpg")!
     let pers2v: UIImageView = UIImageView ()
+    var x:[Int]=[0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,80,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0]
+    var y: [Int]=[300,300,300,300,300,300,300,300,260,260,260,260,260,260,260,260,220,220,220,220,220,220,220,220,180,180,180,180,180,180,180,180,140,140,140,140,140,140,140,140,100,100,100,100,100,100,100,100,60,60,60,60,60,60,60,60,20,20,20,20,20,20,20,20]
+    
     func pers1_view (){
         pers1v.image = pers1i
         pers1v.frame.size.width = 40
         pers1v.frame.size.height = 40
+        UIView.animate(withDuration: 0.8, animations:{
+            self.pers1v.frame.origin.x=CGFloat(self.x[kubik])
+            self.pers1v.frame.origin.y=CGFloat(self.y[kubik])
+        })
         view.addSubview(pers1v)
         
     }
@@ -33,13 +42,22 @@ class ViewController2: UIViewController {
     }
     
     @IBAction func Go(_ sender: UIButton) {
-        var a=kubik_go()
+       kubik+=kubik_go()
+        kubik2+=kubik_go()
+        if(kubik<63){
+            pers1_view()
+            pers2_view()
+        }
     }
     
     func pers2_view (){
         pers2v.image = pers2i
         pers2v.frame.size.width = 40
         pers2v.frame.size.height = 40
+        UIView.animate(withDuration: 0.8, animations:{
+            self.pers2v.frame.origin.x=CGFloat(self.x[kubik2])
+            self.pers2v.frame.origin.y=CGFloat(self.y[kubik2])
+        })
         view.addSubview(pers2v)
         
     }
