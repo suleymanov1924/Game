@@ -68,7 +68,7 @@ class ViewController2: UIViewController {
                 kubik=0
                 pers1_view()
                 pers2win=false
-                hod1.text="Sickovich:\(kubik)"
+                hod1.text="Sickovich:\(kubik2)"
             }
         }
 
@@ -79,10 +79,22 @@ class ViewController2: UIViewController {
     @IBAction func Go(_ sender: UIButton) {
        kubik+=kubik_go()
         if(kubik<63){
+            if (kubik2 != 63)
+            {
             pers1_view()
-            
             go.isEnabled=false
             _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
+        }
+            else
+            {
+                kubik=0
+                pers1_view()
+                kubik2=0
+                pers2_view()
+                pers1win=false
+                hod2.text="Sirny:\(kubik2)"
+                pers2win=false
+            }
         }
         else
         {
