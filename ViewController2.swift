@@ -9,6 +9,8 @@
 import UIKit
 var kubik=0
 var kubik2=0
+var pers1win: Bool=false
+var pers2win: Bool=false
 
 class ViewController2: UIViewController {
     let pers1i: UIImage = UIImage(named: "WU5cvgwpfDg.jpg" )!
@@ -59,6 +61,23 @@ class ViewController2: UIViewController {
         hod1.text="Sickovich:\(kubik)"
         if(kubik<63){
             pers1_view()
+        }
+        else
+        {
+            if (pers1win != true)
+            {
+               kubik=63
+                pers1_view()
+                pers1win=true
+            }
+            else
+            {
+                kubik=0
+                pers1_view()
+                kubik2=0
+                pers2_view()
+                pers1win=false
+            }
         }
         go.isEnabled=false
         
