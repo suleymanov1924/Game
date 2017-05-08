@@ -82,6 +82,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="go" destination="hGo-Pa-Qis" id="3pH-AK-gcI"/>
+                        <outlet property="hod1" destination="I9z-ck-XnV" id="T7r-fV-ebX"/>
+                        <outlet property="hod2" destination="KQV-fa-nNX" id="vYp-Ci-sRm"/>
                         <outlet property="kub_img" destination="Z7Z-qu-Y72" id="0Bz-oh-54q"/>
                     </connections>
                 </viewController>

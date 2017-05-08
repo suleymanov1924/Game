@@ -18,6 +18,10 @@ class ViewController2: UIViewController {
     var x:[Int]=[0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,80,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0,0,40,80,120,160,200,240,280,280,240,200,160,120,80,40,0]
     var y: [Int]=[300,300,300,300,300,300,300,300,260,260,260,260,260,260,260,260,220,220,220,220,220,220,220,220,180,180,180,180,180,180,180,180,140,140,140,140,140,140,140,140,100,100,100,100,100,100,100,100,60,60,60,60,60,60,60,60,20,20,20,20,20,20,20,20]
     
+    @IBOutlet weak var hod1: UILabel!
+    @IBOutlet weak var hod2: UILabel!
+    @IBOutlet weak var go: UIButton!
+    
     func pers1_view (){
         pers1v.image = pers1i
         pers1v.frame.size.width = 40
@@ -43,16 +47,21 @@ class ViewController2: UIViewController {
     
     func pers2go (){
         kubik2+=kubik_go()
+        hod2.text="Sirny:\(kubik2)"
         if(kubik2<63){
             pers2_view()
     }
+        go.isEnabled=true
     }
     
     @IBAction func Go(_ sender: UIButton) {
        kubik+=kubik_go()
+        hod1.text="Sickovich:\(kubik)"
         if(kubik<63){
             pers1_view()
         }
+        go.isEnabled=false
+        
         _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
         
     }
