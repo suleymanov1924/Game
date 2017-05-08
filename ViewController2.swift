@@ -41,14 +41,22 @@ class ViewController2: UIViewController {
         
     }
     
+    func pers2go (){
+        kubik2+=kubik_go()
+        if(kubik2<63){
+            pers2_view()
+    }
+    }
+    
     @IBAction func Go(_ sender: UIButton) {
        kubik+=kubik_go()
-        kubik2+=kubik_go()
         if(kubik<63){
             pers1_view()
-            pers2_view()
         }
+        _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController2.pers2go), userInfo: nil, repeats: false)
+        
     }
+    
     
     func pers2_view (){
         pers2v.image = pers2i
